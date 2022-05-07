@@ -1,0 +1,36 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: ${SIZE}
+      max-request-size: ${SIZE}
+
+  jpa:
+    hibernate:
+      ddl-auto: ${DDL-AUTO}
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        default_batch_fetch_size: ${SIZE}
+    open-in-view: false
+    show-sql: true
+
+  datasource:
+    url: ${URL}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: ${USERNAME}
+    password: ${PASSWORD}
+
+cloud:
+  aws:
+    credentials:
+      secret-key: ${SECRET_KEY}
+      access-key: ${ACCESS_KEY}
+  s3:
+    bucket: ${S3_BUCKET_NAME}
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
+
+
