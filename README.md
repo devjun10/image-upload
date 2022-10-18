@@ -7,13 +7,11 @@ S3 이미지 업로드 구현연습 저장소.
 
 <details>
 <summary>🖥 구현 사항</summary>
-<div markdown="1">
 
 - S3에 간단한 이미지 업로드를 구현한다.
 - 파일 용량은 최대 10MB로 제한한다.
   <br/><br/>
 
-</div>
 <br/>
 </details>
 
